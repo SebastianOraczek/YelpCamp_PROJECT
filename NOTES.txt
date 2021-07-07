@@ -10,4 +10,4 @@ This steps will allow you to manipulate campgrounds have already created:
 
 PRODUCTION MODE
 ----------------
-Visit this page: https://guarded-ocean-47139.herokuapp.com/
+Visit this page: https://yelpcamp-project-so.herokuapp.com/
