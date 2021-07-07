@@ -1,0 +1,52 @@
+<% layout("layout/boilerplate") %>
+
+    <div class="row mb-3">
+        <h1 class="text-center">New Campground</h1>
+        <div class="col-md-6 offset-md-3">
+            <form action="/campgrounds" method="POST" class="validated-form" novalidate enctype="multipart/form-data">
+                <div class="mb-3" novalidate>
+                    <label class="form-label" for="title">Title:</label>
+                    <input class="form-control" type="text" id="title" name="campground[title]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location:</label>
+                    <input class="form-control" type="text" id="location" name="campground[location]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class=" mb-3">
+                    <label class="form-label" for="price">Campground Price:</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input id="price" type="text" class="form-control" placeholder="0.00" name="campground[price]"
+                            required aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description:</label>
+                    <textarea name="campground[description]" id="description" class="form-control" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Choose images:</label>
+                    <input class="form-control" type="file" name="image" id="image" multiple required>
+                    <div class=" valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <button class="btn btn-success">Add Campground</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS code, for form validation, is in validateForms file -->
