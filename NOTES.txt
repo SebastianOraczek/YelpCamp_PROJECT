@@ -1,6 +1,13 @@
+DEVELOPER MODE
+------------------
 This steps will allow you to manipulate campgrounds have already created:
 1. Run app.js.
 2. Register as a user.
 3. Copy your ID from MongoDB.
 4. Paste your ID to seeds/index.js.
 5. Run seends/index.js and run app.js again.
+
+
+PRODUCTION MODE
+----------------
+Visit this page: https://guarded-ocean-47139.herokuapp.com/
